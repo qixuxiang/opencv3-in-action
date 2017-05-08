@@ -1,0 +1,1 @@
+cmake_minimum_required(VERSION 3.7)project(pic_proc)set(CMAKE_CXX_STANDARD 11)set(SOURCE_FILES main.cpp)add_executable(pic_proc ${SOURCE_FILES})find_package(OpenCV REQUIRED)target_link_libraries(pic_proc ${OpenCV_LIBS})
